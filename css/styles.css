@@ -16,11 +16,11 @@
     --secondary-white: rgba(255, 255, 255, 0.6);
     --black: #000000;
     --secondary-bg-color: #F5F4FA;
-    --tertialy-bg-color: #2F303A ;
+    --tertialy-bg-color: #2F303A;
     --border-color: #EEEEEE;
+    --secondary-border-color: #ECECEC;
 
 }
-
 body{
     background-color: var(white);
     color: var(--primary-text-color);
@@ -140,9 +140,11 @@ img{
     line-height: 1.17;
     text-align: center;
 }
+.our-features{
+    padding-top: 94px;
+}
 .features{
     display: flex;
-    padding-top: 94px;
 }
 .features-title{
     display: none;
@@ -194,8 +196,7 @@ img{
 .team-member-details{
     background-color: var(--white);
     border-radius: 0px 0px 4px 4px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 .team-member{
     margin-top: 0;
@@ -250,11 +251,13 @@ img{
 }
 
 /*Portfolio*/
+.header-portfolio{
+    border-bottom: 1px solid var(--secondary-border-color);
+}
 .filters{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .filters .item + .item{
     margin-left: 8px;
@@ -275,6 +278,10 @@ img{
     color: var(--white);
     background-color: var(--accent);
 }
+.portfolio{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 .portfolio-title{
     display: none;
     margin-top: 0;
@@ -283,7 +290,6 @@ img{
 .project-examples{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 .project-examples .item{
     width: calc((100% - 60px) / 3);
@@ -313,9 +319,9 @@ img{
     margin-top: 4px;
     margin-bottom: 0;
     
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.87;
-
 }
 .project-details{
     padding: 20px 24px;
